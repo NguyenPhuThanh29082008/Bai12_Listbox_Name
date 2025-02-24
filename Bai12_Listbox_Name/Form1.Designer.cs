@@ -57,9 +57,9 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(366, 140);
+            this.btnAdd.Location = new System.Drawing.Point(349, 81);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(144, 55);
+            this.btnAdd.Size = new System.Drawing.Size(143, 46);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -67,9 +67,9 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(366, 201);
+            this.btnEdit.Location = new System.Drawing.Point(349, 133);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(144, 55);
+            this.btnEdit.Size = new System.Drawing.Size(143, 46);
             this.btnEdit.TabIndex = 2;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
@@ -77,9 +77,9 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(366, 262);
+            this.btnRemove.Location = new System.Drawing.Point(349, 185);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(144, 55);
+            this.btnRemove.Size = new System.Drawing.Size(143, 46);
             this.btnRemove.TabIndex = 2;
             this.btnRemove.Text = "Remove";
             this.btnRemove.UseVisualStyleBackColor = true;
@@ -87,9 +87,9 @@
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(366, 323);
+            this.btnInsert.Location = new System.Drawing.Point(349, 305);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(144, 55);
+            this.btnInsert.Size = new System.Drawing.Size(143, 46);
             this.btnInsert.TabIndex = 2;
             this.btnInsert.Text = "Insert";
             this.btnInsert.UseVisualStyleBackColor = true;
@@ -97,16 +97,17 @@
             // 
             // txtIndex
             // 
-            this.txtIndex.Location = new System.Drawing.Point(366, 396);
+            this.txtIndex.Location = new System.Drawing.Point(349, 357);
             this.txtIndex.Name = "txtIndex";
-            this.txtIndex.Size = new System.Drawing.Size(144, 26);
+            this.txtIndex.Size = new System.Drawing.Size(143, 26);
             this.txtIndex.TabIndex = 3;
+            this.txtIndex.TextChanged += new System.EventHandler(this.txtIndex_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(707, 476);
+            this.ClientSize = new System.Drawing.Size(719, 467);
             this.Controls.Add(this.txtIndex);
             this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.btnRemove);

@@ -35,6 +35,8 @@
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnInsert = new System.Windows.Forms.Button();
             this.txtIndex = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstNames
@@ -103,11 +105,33 @@
             this.txtIndex.TabIndex = 3;
             this.txtIndex.TextChanged += new System.EventHandler(this.txtIndex_TextChanged);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(523, 81);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(159, 35);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Thêm vào LIST";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(523, 122);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(159, 33);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Chèn vào LISTBOX";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 467);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtIndex);
             this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.btnRemove);
@@ -134,6 +158,8 @@
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnInsert;
         private System.Windows.Forms.TextBox txtIndex;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

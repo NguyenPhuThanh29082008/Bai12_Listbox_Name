@@ -12,6 +12,8 @@ namespace Bai12_Listbox_Name
 {
     public partial class Form1 : Form
     {
+        List<string> ten = new List<string>();
+
         public Form1()
         {
             InitializeComponent();
@@ -19,9 +21,16 @@ namespace Bai12_Listbox_Name
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            lstNames.Items.Add(txtName.Text);
+            /*lstNames.Items.Add(txtName.Text);
             txtName.Text = "";
-            txtName.Focus();
+            txtName.Focus(); */
+
+            ten.Add(txtName.Text);
+            foreach (string a in ten)
+            {
+                lstNames.Items.Add(a);
+            }
+            
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -72,6 +81,20 @@ namespace Bai12_Listbox_Name
         private void txtIndex_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            List<string> List = new List<string>();
+            ten.Add(txtName.Text);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            foreach (var a in ten)
+            {
+                lstNames.Items.Add(a);
+            }
         }
     }
 }
